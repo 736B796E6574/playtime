@@ -4,24 +4,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .hero {
   min-height: 100vh;
   min-width: 100vw;
-  background-image: -webkit-linear-gradient(
+  /* background-image: -webkit-linear-gradient(
     145deg,
     #0067ff 0%,
     #005ce3 24%,
     #0050c6 100%
-  );
+  ); */
 }
 
 h1 {
   font-family: "Heebo", sans-serif;
   font-size: 4rem;
   font-weight: 800;
-  color: #fafafa;
+  color: #fffdd0;
   letter-spacing: 1.2;
   width: 50%;
   margin: 0 auto;
@@ -37,7 +38,7 @@ nav {
   font-family: "Heebo", sans-serif;
   font-size: 1.5rem;
   font-weight: 200;
-  color: #fafafa;
+  color: #fffdd0;
   letter-spacing: 1.2;
   width: 100vw;
   padding: 16px;
@@ -51,7 +52,7 @@ ul {
 }
 
 button {
-  background-color: #fafafa;
+  background-color: #fffdd0;
   color: #0067ff;
   border-radius: 10px;
   border: none;
@@ -69,4 +70,11 @@ img {
   margin-left: 318px;
   margin-top: 30px;
   transform: rotate(-20deg);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Set the z-index to -1 to place the canvas behind the hero section */
 }
